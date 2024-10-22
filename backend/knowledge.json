@@ -1,0 +1,70 @@
+{
+    "knowledge": [
+        {
+            "privacy_risk": "Data breaches and sale of personal data",
+            "cause": "LLM-based CAs operating on the cloud",
+            "influence": "Users losing control over their chat logs",
+            "evidence": "Most popular LLM-based CAs operate on the cloud"
+        },
+        {
+            "privacy_risk": "Memorization risks",
+            "cause": "LLMs memorizing details in the training data",
+            "influence": "Sensitive information being leaked in response to prompts",
+            "evidence": "LLMs using user data to train their models periodically"
+        },
+        {
+            "privacy_risk": "Disclosure of personally identifiable information (PII)",
+            "cause": "Users disclosing their own and others' data in conversations",
+            "influence": "Implicating interdependent privacy issues",
+            "evidence": "Users disclosing various types of PII in chat histories"
+        },
+        {
+            "privacy_risk": "Dark patterns in opt-out interfaces",
+            "cause": "Discouraging users from exercising privacy controls",
+            "influence": "Users feeling they have to sacrifice privacy for benefits",
+            "evidence": "Opt-out interfaces linking privacy and utility loss"
+        },
+        {
+            "privacy_risk": "Memorization and output of training data",
+            "cause": "Models trained on vast amounts of data, including user data",
+            "influence": "New data leak risks",
+            "evidence": "Prompting the model to continuously output 'poem' can trick it into leaking training data verbatim"
+        },
+        {
+            "privacy_risk": "Extraction of personal attributes from text",
+            "cause": "LLMs lack commonsense about social privacy norms",
+            "influence": "Malicious actors can infer personal attributes from seemingly harmless text",
+            "evidence": "Inference of location based on text mentioning a specific traffic maneuver"
+        },
+        {
+            "privacy_risk": "Lack of understanding of privacy norms",
+            "cause": "LLMs lack commonsense about social privacy norms",
+            "influence": "Difficulty in keeping secrets and protecting privacy",
+            "evidence": "Models can be easily tricked by third-party adversaries to ignore privacy-protecting instructions"
+        },
+        {
+            "privacy_risk": "User sharing sensitive information with LLM-based CAs",
+            "cause": "High utility and human-like interactions of LLM-based CAs",
+            "influence": "Users sharing sensitive and personally identifiable information",
+            "evidence": "Users constantly facing challenges in protecting their privacy due to flawed mental models and dark patterns in privacy management features"
+        },
+        {
+            "privacy_risk": "Exposure risk",
+            "cause": "AI technologies can generate human-like media, such as deepfake pornography, without consent",
+            "influence": "AI technologies can lead to the unauthorized dissemination of sensitive or private information",
+            "evidence": "Twitch streamer QTCinderella's plea to stop spreading links to AI-generated deepfake pornography"
+        },
+        {
+            "privacy_risk": "Phrenology/physiognomy risk",
+            "cause": "AI can learn arbitrary classification functions and potentially infer sensitive attributes like sexual orientation from physical features",
+            "influence": "AI technologies can perpetuate harmful stereotypes and discrimination based on physical appearance",
+            "evidence": "The belief that AI can automatically detect things like sexual orientation from physical attributes"
+        },
+        {
+            "privacy_risk": "Surveillance risk",
+            "cause": "Facial recognition classifiers require large amounts of face data, leading to uncritical data collection practices",
+            "influence": "AI technologies can enable widespread surveillance and tracking of individuals without their consent",
+            "evidence": "Collection of face scans in airports for facial recognition purposes"
+        }
+    ]
+}

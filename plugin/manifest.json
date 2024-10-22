@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "CLEAR",
+    "version": "2.0",
+    "description": "",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+    {
+      "matches": ["*://chatgpt.com/*"],  
+      "js": ["content_gpt.js"]
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content_gemini.js"]
+    }
+    ]
+  }
+  

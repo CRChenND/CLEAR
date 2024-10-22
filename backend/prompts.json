@@ -1,0 +1,21 @@
+{
+    "facts":{
+        "prefix":"",
+        "prompt":"Given the privacy policy: {policy}, \n and the input sensitive information: {sensitiveInfo}, \n cite the sentenses in the privacy policy that are semantically related with the input sensitive information only during using the LLM service rather than creating account. List who will access the data (service provider and third parties) and its reason for access. Each data accesor should be different. The language and vocabulary should be easy to understand for kids in elementary school. \n {fact_info}",
+        "suffix":"Given the privacy policy: {policy}, \n and the input sensitive information: {sensitiveInfo}, \n cite the sentenses in the privacy policy that are semantically related with the input sensitive information only during using the LLM service rather than creating account. List who will access the data (service provider and third parties) and its reason for access. Each data accesor should be different. The language and vocabulary should be easy to understand for kids in elementary school. {format_instructions}"
+    },
+    "risks_new":{
+        "prompt":"You are acting as an privacy expert, and you know the knowledge about privacy risks in the context of LLM: {knowledge}, \n Given the privacy policy: {policy}, \n Return the most important 3 LLM privacy risk with detailed consequence as evidence (e.g., memorization risks). The risks should be related to the sensitive information: {sensitiveInfo}. Also return risk type and related privacy knowledge. {format_instructions}"
+    },
+    "facts_new":{
+        "prompt":"Given the privacy policy: {policy}, \n cite the sentenses in the privacy policy related to {sensitiveInfo}. Explain the cited sentence in a simpler way within 15 words. The language and vocabulary should be easy to understand for kids in elementary school. {format_instructions}"
+    },
+    "semantic_match":{
+        "prefix":"",
+        "prompt":"Given the sentence: {sentense}, \n and the sensitive information input by a user: {sensitiveInfo}, \n return the segment in the sentence that semantically matched with the sensitive information: {matched_part}",
+        "suffix":"Given the sentence: {sentense}, \n and the sensitive information input by a user: {sensitiveInfo}, \n return the segment in the sentence that semantically matched with the sensitive information. Each segment should be as short and precise as possible. {format_instructions}"
+    },
+    "paper_sum":{
+        "prompt":"{content} \n Summarize and return all the privacy risks in the paper. {format_instructions}"
+    }
+}

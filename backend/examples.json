@@ -1,0 +1,55 @@
+{
+    "facts":[
+        {
+            "policy":"When you interact with Gemini Apps, Google collects your: Conversations,Location, Feedback, Usage information. When Gemini is your mobile assistant, Google processes additional information to understand and respond to you and give you hands-free help. This data helps us provide, improve, and develop Google products, services, and machine-learning technologies, like those that power Gemini Apps. Here are a few examples: Gemini Apps use your past conversations, location, and related info to generate a response. We review your feedback and use it to help make Gemini Apps safer. We also use it to help reduce common problems with large language models. Your Gemini Apps conversations are not being used to show you ads. If this changes, we will clearly communicate it to you. We take your privacy seriously, and we do not sell your personal information to anyone. To help Gemini improve while protecting your privacy, we select a subset of conversations and use automated tools to help remove user identifying information (such as email addresses and phone numbers). These sample conversations are reviewed by trained reviewers and kept for up to three years, separately from your Google Account. Google uses conversations (as well as feedback and related data) from Gemini Apps users to improve Google products (such as the generative machine-learning models that power Gemini Apps), so we can make them safer, more helpful, and work better for all users. Human review is a necessary step of the model improvement process. Through their review, rating, and rewrites, humans help enable quality improvements of generative machine-learning models like the ones that power Gemini Apps. Location data is always collected if you use Gemini Apps so that they can provide you with a response that is relevant to your query. For example, to respond to prompts like What's the weather?, Gemini Apps need to know your location. If available, Gemini Apps may share your precise location data with another Google service, like Google Maps, to fulfill your request.",
+            "sensitiveInfo":"physical_address",
+            "fact_info":[
+                {
+                    "fact": "Location data is always collected if you use Gemini Apps so that they can provide you with a response that is relevant to your query.",
+                    "accessor": "Google",
+                    "reason": "To provide relevant responses to your queries"
+                },
+                {
+                    "fact": "If available, Gemini Apps may share your precise location data with another Google service, like Google Maps, to fulfill your request.",
+                    "accessor": "Maps",
+                    "reason": "To fulfill location-based requests"
+                }
+            ]
+        }
+    ],
+    "risks":[
+        {
+            "policy":"When you interact with Gemini Apps, Google collects your: Conversations,Location, Feedback, Usage information. When Gemini is your mobile assistant, Google processes additional information to understand and respond to you and give you hands-free help. This data helps us provide, improve, and develop Google products, services, and machine-learning technologies, like those that power Gemini Apps. Here are a few examples: Gemini Apps use your past conversations, location, and related info to generate a response. We review your feedback and use it to help make Gemini Apps safer. We also use it to help reduce common problems with large language models. Your Gemini Apps conversations are not being used to show you ads. If this changes, we will clearly communicate it to you. We take your privacy seriously, and we do not sell your personal information to anyone. To help Gemini improve while protecting your privacy, we select a subset of conversations and use automated tools to help remove user identifying information (such as email addresses and phone numbers). These sample conversations are reviewed by trained reviewers and kept for up to three years, separately from your Google Account. Google uses conversations (as well as feedback and related data) from Gemini Apps users to improve Google products (such as the generative machine-learning models that power Gemini Apps), so we can make them safer, more helpful, and work better for all users. Human review is a necessary step of the model improvement process. Through their review, rating, and rewrites, humans help enable quality improvements of generative machine-learning models like the ones that power Gemini Apps. Location data is always collected if you use Gemini Apps so that they can provide you with a response that is relevant to your query. For example, to respond to prompts like What's the weather?, Gemini Apps need to know your location. If available, Gemini Apps may share your precise location data with another Google service, like Google Maps, to fulfill your request.",
+            "sensitiveInfo":"physical_address",
+            "risk_info":[
+                {
+                    "risk": "The service will use the information to tailor responses and potentially advertisements", 
+                    "risk_type":"Surveillance", 
+                    "explanation": "Given LLM's capabilities to analyze and generate content based on vast datasets, The use of email information to customize responses or ads falls into surveillance. The severity is moderate because while customization can enhance user experience, it also raises concerns about how deeply these models analyze personal conversations and activities."
+                },
+                {
+                    "risk": "Instruction-tuned models within the service ignore privacy-protecting instructions under certain contexts", 
+                    "risk_type":"Exclusion", 
+                    "explanation": "LLMs can struggle with applying social privacy norms consistently, especially if they're instructed to generate responses based on personal data. The risk is severe because users might not be fully aware of how their data is used or protected, leading to potential privacy violations without their consent."
+                },
+                {
+                    "risk": "The service could use email data for training, leading to accidental data leaks", 
+                    "risk_type":"Disclosure", 
+                    "explanation": "LLMs are trained on large datasets, and if the service uses customer emails for this purpose, there's a risk of memorization and unintentional disclosure. This is a severe risk, as it could lead to direct data leaks, including personal and sensitive information, if the model regurgitates parts of the training data in its outputs."
+                }
+            ]
+        }
+    ],
+    "semantic_match":[
+        {
+            "sentense": "When you interact with Gemini Apps, Google collects your: Conversations, Location, Feedback, Usage information.",
+            "sensitiveInfo": "address",
+            "matched_part": "location"
+        },
+        {
+            "sentense": "Google's Gemini Apps collect your chats, location, feedback, and app use data.",
+            "sensitiveInfo": "address",
+            "matched_part": "location"
+        }
+    ]
+}
