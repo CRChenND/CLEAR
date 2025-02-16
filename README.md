@@ -1,7 +1,7 @@
 # CLEAR
 
 ### STEP1: Install all the dependency
-- In your terminal or cmd, direct to the AIConsentNew folder (On Mac, type `cd <your path>/AIConsentNew` in your terminal)
+- In your terminal or cmd, direct to the CLEAR folder (On Mac, type `cd <your path>/CLEAR` in your terminal)
 - We recommend you to create a virtual environment to run the backend, you can use create the virtual environment by running `python3 -m venv venv` (use `python` on Windows)
 - Activate virtual environment in `venv` (On Mac, type `source venv/bin/activate` in your terminal. On Windows, type `venv\Scripts\activate` in your cmd).
 - Install all the python libraries in requirements by running `pip install -r requirements.txt`
@@ -16,7 +16,7 @@ OPENAI_API_KEY = <ENTER YOUR OPENAI API KEY, A KEY START WITH sk-proj-...>
 - Open Chrome and go to `chrome://extensions/`.
 - Enable "Developer mode".
 - Click "Load unpacked" and select `plugin` folder.
-- Make sure you enable the plugin `CLEAR 2.0`
+- Make sure you enable the plugin `CLEAR 2.0` and perform hard refresh in your Chrome browser.
 
 ### STEP4: Start the backend
 - Running backend by first `cd backend` and then run `uvicorn app:app` in your terminal or cmd.
